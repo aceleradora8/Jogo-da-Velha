@@ -68,11 +68,11 @@ puts"O Venceu!"
   break
 end
 #
-if l11=="X" && l22=="X" && l32=="X"
+if l11=="X" && l22=="X" && l33=="X"
 puts"X Venceu!" 
   break
 end
-if l11=="O" && l22=="O" && l32=="O"
+if l11=="O" && l22=="O" && l33=="O"
 puts"O Venceu!" 
   break
 end
@@ -86,29 +86,29 @@ puts"O Venceu!"
   break
 end
 ###########################################
-  puts "Digite a coordenada"
+  puts "Digite a coordenada, ex: 11"
   x = gets.to_i# o gets coloca o valor auto em string
   puts "Digite X ou O"
-  y = gets.upcase!
+  y = gets.chomp.upcase!# usa-se .chmop, pois o gets pega o ENTER
 case x
 when 11
-  l11=y[0]# pois o gets pega o ENTER tb
+  l11=y
 when 12
-  l12=y[0]
+  l12=y
 when 13
-  l13=y[0]
+  l13=y
 when 21
-  l21=y[0]
+  l21=y
 when 22
-  l22=y[0]
+  l22=y
 when 23
-  l23=y[0]
+  l23=y
 when 31
-  l31=y[0]
+  l31=y
 when 32
-  l32=y[0]
+  l32=y
 when 33
-  l33=y[0]
+  l33=y
 end
 }
 
